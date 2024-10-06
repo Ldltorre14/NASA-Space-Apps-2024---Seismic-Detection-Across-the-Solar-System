@@ -33,10 +33,6 @@ LUNAR_TEST_DATA_S15_GRADE_B = os.path.join(PROJECT_ROOT, "data", "lunar", "test"
 LUNAR_TEST_DATA_S16_GRADE_A = os.path.join(PROJECT_ROOT, "data", "lunar", "test", "data", "S16_GradeA")
 LUNAR_TEST_DATA_S16_GRADE_B = os.path.join(PROJECT_ROOT, "data", "lunar", "test", "data", "S16_GradeB")
 
-LUNAR_TEST_DATA_S15_GRADE_B = "./data/lunar/test/data/S15_GradeB"
-LUNAR_TEST_DATA_S16_GRADE_A = "./data/lunar/test/data/S16_GradeA"
-LUNAR_TEST_DATA_S16_GRADE_B = "./data/lunar/test/data/S16_GradeB"
-
 
 #   TRAINING DATA
 LUNAR_TRAINING_CATALOG_DIRECTORY = os.path.join(PROJECT_ROOT, "data", "lunar", "training", "catalogs")

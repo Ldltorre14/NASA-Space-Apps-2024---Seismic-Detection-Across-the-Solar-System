@@ -3,6 +3,17 @@ import matplotlib.pyplot as plt
 import constants.consts as cs
 
 
-df = pd.read_csv(cs.MARS_TRAINING_DATA_DIRECTORY + "/XB.ELYSE.02.BHV.2022-01-02HR04_evid0006.csv")
 
-print(df.head())
+def visualizeDf(data):
+    print(data.info())
+    #print(data.head())
+    #print(data.describe())
+
+    print(f"Minimun Velocity: {data['velocity(m/s)'].min()}")
+    print(f"Maximum Velocity: {data['velocity(m/s)'].max()}")
+    print(f"Median Velocity: {data['velocity(m/s)'].median()}")
+    print(f"Mean Velocity: {data['velocity(m/s)'].mean()}")
+    print(f"Mode Velocity: {data['velocity(m/s)'].mode()}")
+
+    plt.boxplot(data['velocity(m/s)'])
+    plt.show()
